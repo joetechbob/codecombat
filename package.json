@@ -30,6 +30,7 @@
   ],
   "scripts": {
     "start": "node ./index.js",
+    "debug": "node --inspect index.js",
     "test": "./node_modules/.bin/karma start",
     "predeploy": "echo Starting deployment--hold onto your butts.; echo Skipping webpack build --production",
     "postdeploy": "echo Deployed. Unclench.",

@@ -14,7 +14,8 @@ module.exports = class Tracker extends CocoClass
     if window.tracker
       console.error 'Overwrote our Tracker!', window.tracker
     window.tracker = @
-    @isProduction = document.location.href.search('codecombat.com') isnt -1
+    #@isProduction = document.location.href.search('codecombat.com') isnt -1
+    @isProduction = false
     @trackReferrers()
     @supermodel = new SuperModel()
     @identify() # Needs supermodel to exist first
